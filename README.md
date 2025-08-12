@@ -12,6 +12,6 @@ Responsive design for all screen sizes 📱💻
 5) Fast and lightweight
 
 🛠 Tech Stack
-    HTML5 – Semantic markup
-    CSS3 – Flexbox, Grid, animations
-    JavaScript (ES6+) – Interactivity and DOM manipulation
+   1) HTML5 – Semantic markup
+   2) CSS3 – Flexbox, Grid, animations
+   3) JavaScript (ES6+) – Interactivity and DOM manipulation
