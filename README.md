@@ -5,19 +5,13 @@ A fully responsive personal portfolio website showcasing my skills, projects, an
 🚀 Features
 Responsive design for all screen sizes 📱💻
 
-Smooth animations and transitions
-
-Project showcase section
-
-About Me and Skills section
-
-Contact form with validation
-
-Fast and lightweight
+1) Smooth animations and transitions
+2) Project showcase section
+3) About Me and Skills section
+4) Contact form with validation
+5) Fast and lightweight
 
 🛠 Tech Stack
-HTML5 – Semantic markup
-
-CSS3 – Flexbox, Grid, animations
-
-JavaScript (ES6+) – Interactivity and DOM manipulation
+    HTML5 – Semantic markup
+    CSS3 – Flexbox, Grid, animations
+    JavaScript (ES6+) – Interactivity and DOM manipulation
