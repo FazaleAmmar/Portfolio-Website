@@ -15,19 +15,21 @@ body {
 /* Header */
 
 header {
-  border: 2px solid white;
-  height: 65vh;
+  height: 90vh;
   width: 100%;
+  background-image: url("../assets/Images/headerBg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 header nav {
   height: 15%;
   width: 100%;
-  border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  background: linear-gradient(90deg, #000000, #333131b0);
 }
 
 /* Logo */
@@ -41,9 +43,10 @@ header nav {
 }
 
 .logo img {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* Links */
@@ -78,4 +81,85 @@ header nav {
 
 nav .navLinks ul li:hover {
   background-color: rgba(188, 169, 169, 0.1);
+}
+
+/* Hero */
+
+.hero {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero .intro {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero .intro h2:nth-of-type(1) {
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+
+.hero .intro h2:nth-of-type(2) {
+  margin: 0 0 15px 0;
+  font-size: 28px;
+  font-weight: 900;
+  color: grey;
+}
+
+.hero .intro p {
+  font-size: 10px;
+  width: 50%;
+}
+
+.hero .introImage {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .introImage img {
+  height: 65%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+}
+
+.hero .introImage img:hover {
+  z-index: 1;
+  scale: 1.2;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg);
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+.hero .introImage .blur {
+  height: 50%;
+  width: 140%;
+  background: repeating-linear-gradient(
+    to right,
+    #000 0px,
+    #000 40px,
+    #111 40px,
+    #111 80px
+  );
+  filter: blur(11px);
+  position: absolute;
+  bottom: 0;
 }
