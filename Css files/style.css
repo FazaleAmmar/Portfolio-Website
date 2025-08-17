@@ -188,8 +188,8 @@ nav .navLinks ul li:hover {
 }
 
 .serviceCard img {
-  height: 100px;
-  width: 100px;
+  height: 25%;
+  width: 29%;
   object-fit: cover;
   object-position: center;
 }
