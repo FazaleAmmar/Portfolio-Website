@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css files/style.css" />
+    <link rel="stylesheet" href="Css files/utility.css" />
     <link
       rel="shortcut icon"
       href="assets/Images/favicon.ico"
@@ -12,41 +13,57 @@
     <title>"Ammar.dev" Blending creativity with clean, efficient code.</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="/"><img src="assets/Images/logo.png" alt="" /></a>
-        </div>
-        <div class="navLinks">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">Contact Us</a></li>
-            <li><a href="/">Careers</a></li>
-            <li><a href="/">Blog</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="hero">
-        <div class="intro">
-          <h2>Crafting Web Experiences</h2>
-          <h2>That Stand Out</h2>
-          <p>
-            At Ammar.dev, I turn ideas into sleek, functional, and
-            high-performance websites. With a passion for clean code and bold
-            design, I create digital experiences that not only look great but
-            work flawlessly. From intuitive interfaces to responsive layouts, my
-            focus is on delivering solutions that make an impact — helping your
-            brand shine in the modern digital world.
+    <!-- nav bar -->
+
+    <nav>
+      <div class="logo">
+        <a href="/"><img src="assets/Images/logo.png" alt="" /></a>
+      </div>
+      <div class="navLinks">
+        <ul>
+          <li id="home"><a href="/">Home</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Contact Us</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main section -->
+
+    <main>
+      <div class="servicesContainer">
+        <div class="serviceTitle">
+          <h2><span class="grey">Our</span> <span>Services</span></h2>
+          <p class="grey">
+            I provide modern, high-performance web solutions tailored to your
+            needs. From design to deployment, every detail is crafted to make
+            your brand shine online
           </p>
         </div>
-        <div class="introImage">
-          <img src="assets/Images/Icon.png" alt="" />
-          <div class="blur"></div>
+
+        <div class="serviceCards">
+          <div class="serviceCard">
+            <img src="assets/Images/service1.svg" alt="" />
+            <div class="cardContent">
+              <h3>Web Development</h3>
+              <p>
+                As a web developer, I specialize in building sleek, responsive,
+                and user-focused websites that combine clean design with
+                powerful functionality. From creating visually engaging
+                interfaces to ensuring seamless performance across devices, I
+                craft solutions that not only look professional but also drive
+                results. My goal is to transform your ideas into digital
+                experiences that leave a lasting impact.
+              </p>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
-    </header>
+    </main>
   </body>
 </html>
