@@ -5,6 +5,10 @@
   font-family: poppins, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Scroll bar */
 body::-webkit-scrollbar {
   width: 10px;
@@ -106,6 +110,99 @@ nav .navLinks ul li:hover {
   transition: 0.2s ease-in-out;
 }
 
+/* Intro */
+
+.intro {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.intro-content {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile-pic {
+  margin-top: 5rem;
+}
+
+.profile-pic img {
+  width: 20rem;
+  border-radius: 50%;
+  border: 3px solid #444;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.intro-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.intro-content h1 span {
+  color: #ccc;
+}
+
+.intro-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #bfbfbf;
+  margin-bottom: 1rem;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #fff;
+  margin-left: 2px;
+  width: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro-content p {
+  font-size: 1rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
+  color: #fff;
+}
+
 /* Our services */
 
 .servicesContainer {
@@ -118,7 +215,7 @@ nav .navLinks ul li:hover {
   flex-direction: column;
 }
 
-.serviceTitle > h2 {
+.serviceTitle>h2 {
   margin: 0 0 15px 0;
   font-size: 28px;
   font-weight: 900;
@@ -144,17 +241,16 @@ nav .navLinks ul li:hover {
 /* Cards */
 
 .serviceCards {
-  height: 90%;
+  height: 68%;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: space-evenly;
 }
 
 .serviceCard {
-  height: 65%;
-  width: 40%;
+  height: 96%;
+  width: 45%;
   border: 2px solid rgba(41, 36, 36, 0.304);
   border-radius: 35px;
   position: relative;
@@ -189,7 +285,7 @@ nav .navLinks ul li:hover {
 
 .serviceCard img {
   height: 25%;
-  width: 29%;
+  width: 31%;
   object-fit: cover;
   object-position: center;
 }
