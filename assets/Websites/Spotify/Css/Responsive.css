@@ -1,0 +1,101 @@
+/* ========== LEFT SIDEBAR ========== */
+.left {
+  position: absolute;
+  transition: left 0.5s;
+  width: 80%;
+  left: -100%;
+  z-index: 1;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.home {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 40px) 0,
+    calc(100% - 40px) 40px,
+    100% 40px,
+    100% 100%,
+    0 100%
+  );
+}
+
+.library {
+  min-height: 67vh;
+}
+
+.songList {
+  height: 50vh;
+}
+
+.footer {
+  width: 95%;
+}
+
+.close {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+/* ========== RIGHT MAIN CONTENT ========== */
+.right {
+  width: 100vw;
+  margin: 0;
+}
+
+.cardContainer {
+  justify-content: center;
+  margin: 30px 0 0 0;
+  padding-top: 15px;
+}
+
+/* Playlist Cards */
+.card {
+  width: 10rem;
+  height: 17rem;
+}
+
+.card p {
+  font-size: 10px;
+}
+
+.play {
+  top: 200px;
+}
+
+.card:hover .play {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+
+/* ========== PLAYBAR ========== */
+.playBar {
+  height: fit-content;
+  width: 88%;
+}
+
+.seekBar {
+  width: 90%;
+  margin-left: 12px;
+}
+
+.aboveBar {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.songInfo {
+  text-align: center;
+}
+
+.songTime {
+  text-align: center;
+}
+
+/* ========== NAV / MENU ========== */
+.menu {
+  display: inline-block;
+}

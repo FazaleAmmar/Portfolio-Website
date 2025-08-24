@@ -138,6 +138,9 @@ nav .navLinks ul li:hover {
   border: 3px solid #444;
   margin-bottom: 1.5rem;
   object-fit: cover;
+  transform: translateX(-200%);
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .intro-content h1 {
@@ -157,6 +160,12 @@ nav .navLinks ul li:hover {
   margin-bottom: 1rem;
 }
 
+.intro-text {
+  transform: translateX(200%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
 .cursor {
   display: inline-block;
   background-color: #fff;
@@ -166,7 +175,6 @@ nav .navLinks ul li:hover {
 }
 
 @keyframes blink {
-
   0%,
   50% {
     opacity: 1;
@@ -215,7 +223,7 @@ nav .navLinks ul li:hover {
   flex-direction: column;
 }
 
-.serviceTitle>h2 {
+.serviceTitle > h2 {
   margin: 0 0 15px 0;
   font-size: 28px;
   font-weight: 900;
@@ -296,6 +304,114 @@ nav .navLinks ul li:hover {
 }
 
 .cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25%;
+}
+
+/* Our Works */
+
+.workContainer {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.workTitle > h2 {
+  margin: 0 0 15px 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.workTitle > h2 :nth-child(1) {
+  margin-right: 10px;
+}
+
+.workTitle {
+  text-align: center;
+  width: 55%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+}
+
+.workTitle p {
+  font-size: 10px;
+  width: 70%;
+  text-align: center;
+}
+
+.workCards {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.workCards > a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.workCard {
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgba(41, 36, 36, 0.304);
+  border-radius: 35px;
+  position: relative;
+  background-image: url(../assets/Images/CardBg.svg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.workCard:hover {
+  transform: scale(1.02);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.workCard h3 {
+  font-size: 23px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.workCard p {
+  font-size: 13px;
+  width: 70%;
+  text-align: center;
+  color: grey;
+}
+
+.workCard img {
+  height: 25%;
+  width: 31%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.workCard img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.WorkContent {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -40,3 +40,19 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, 500);
 });
+
+// Intro Animation
+
+const introText = document.querySelector(".intro-text");
+const profilePic = document.querySelector(".profile-pic img");
+
+const introAnimation = () => {
+  setTimeout(() => {
+    introText.style.transform = "translateY(0)";
+    introText.style.opacity = "1";
+    profilePic.style.transform = "translateY(0)";
+    profilePic.style.opacity = "1";
+  }, 500);
+};
+
+introAnimation();
