@@ -140,6 +140,7 @@ nav .navLinks ul li:hover {
   object-fit: cover;
   transform: translateX(-200%);
   opacity: 0;
+  box-shadow: 0px 0px 13px 2px white;
   transition: all 1s ease;
 }
 
@@ -150,7 +151,7 @@ nav .navLinks ul li:hover {
 }
 
 .intro-content h1 span {
-  color: #ccc;
+  color: cyan;
 }
 
 .intro-content h2 {
@@ -175,6 +176,7 @@ nav .navLinks ul li:hover {
 }
 
 @keyframes blink {
+
   0%,
   50% {
     opacity: 1;
@@ -223,7 +225,7 @@ nav .navLinks ul li:hover {
   flex-direction: column;
 }
 
-.serviceTitle > h2 {
+.serviceTitle>h2 {
   margin: 0 0 15px 0;
   font-size: 28px;
   font-weight: 900;
@@ -313,7 +315,7 @@ nav .navLinks ul li:hover {
 /* Our Works */
 
 .workContainer {
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   color: white;
   margin: 5rem auto;
@@ -322,13 +324,13 @@ nav .navLinks ul li:hover {
   flex-direction: column;
 }
 
-.workTitle > h2 {
+.workTitle>h2 {
   margin: 0 0 15px 0;
   font-size: 28px;
   font-weight: 900;
 }
 
-.workTitle > h2 :nth-child(1) {
+.workTitle>h2 :nth-child(1) {
   margin-right: 10px;
 }
 
@@ -350,38 +352,47 @@ nav .navLinks ul li:hover {
 }
 
 .workCards {
-  height: 80%;
+  height: 70%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.workCards > a {
-  text-decoration: none;
-  color: white;
-  height: 100%;
+.workCard {
+  height: 90%;
   width: 40%;
   margin-top: 1rem;
-}
-
-.workCard {
-  height: 100%;
-  width: 100%;
-  border: 2px solid rgba(41, 36, 36, 0.304);
+  border: 2px solid #0f0f0f;
   border-radius: 35px;
   position: relative;
-  background-image: url(../assets/Images/CardBg.svg);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  background: linear-gradient(140deg, #232020, #000000);
 }
+
 
 .workCard:hover {
   transform: scale(1.02);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+
+.workHeader {
+  background-image: url(../assets/Images/CardBg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #80808014;
+  border-radius: 35px;
 }
 
 .workCard h3 {
@@ -393,15 +404,14 @@ nav .navLinks ul li:hover {
 }
 
 .workCard p {
-  font-size: 13px;
-  width: 70%;
+  font-size: 12px;
   text-align: center;
   color: grey;
 }
 
 .workCard img {
-  height: 25%;
-  width: 31%;
+  height: 40%;
+  width: 26%;
   object-fit: cover;
   object-position: center;
 }
@@ -415,5 +425,52 @@ nav .navLinks ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 25%;
+  height: 30%;
+  width: 80%;
+  border-radius: 35px;
+}
+
+.workBtn {
+  font-size: 11px;
+  border: 1px solid #272727;
+  background: transparent;
+  color: lightgray;
+  padding: 3px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+  font-family: poppins, sans-serif;
+}
+
+.workBtn a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.workBtn:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 20px #535354;
+}
+
+.workDetails {
+  font-size: 13px;
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
