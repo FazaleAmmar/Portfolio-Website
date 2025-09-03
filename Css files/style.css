@@ -35,15 +35,13 @@ html {
 
 /* body */
 
-body {
-  background-color: #0f0f0f;
-  color: white;
+main {
+  background: linear-gradient(140deg, #232020, #000000);
 }
 
 .container {
   height: 100vh;
   width: 100%;
-  background-color: #0f0f0f;
   color: white;
 }
 
@@ -111,8 +109,7 @@ nav {
 
 nav .navLinks ul li:hover {
   background-color: rgba(188, 169, 169, 0.1);
-  transform: scale(1.05);
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /* Intro */
@@ -228,7 +225,6 @@ nav .navLinks ul li:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(140deg, #232020, #000000);
 }
 
 .serviceTitle>h2 {
@@ -326,7 +322,6 @@ nav .navLinks ul li:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(140deg, #2320209e, #000000);
 }
 
 .workTitle>h2 {
@@ -489,7 +484,6 @@ nav .navLinks ul li:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(140deg, #232020, #000000);
 }
 
 .faq-container {
@@ -536,4 +530,77 @@ nav .navLinks ul li:hover {
 
 .faq-item.active .faq-icon {
   transform: rotate(180deg);
+}
+
+/* ready section */
+
+.ready {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.readyContainer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  border: 2px solid #80808014;
+  border-radius: 35px;
+  background-image: url(../assets/Images/CardBg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.readyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.readyContent h3 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.readyContent p {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  width: 65%;
+}
+
+.readyBtn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.readyBtn:hover {
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+.readyContainer img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
 }
