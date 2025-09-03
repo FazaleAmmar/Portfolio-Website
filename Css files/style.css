@@ -36,6 +36,11 @@ html {
 /* body */
 
 body {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.container {
   height: 100vh;
   width: 100%;
   background-color: #0f0f0f;
@@ -217,12 +222,13 @@ nav .navLinks ul li:hover {
 
 .servicesContainer {
   height: 150vh;
-  width: 90%;
+  width: 100%;
+  margin-top: 5.6rem;
   color: white;
-  margin: 5rem auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(140deg, #232020, #000000);
 }
 
 .serviceTitle>h2 {
@@ -275,7 +281,6 @@ nav .navLinks ul li:hover {
 .serviceCard:hover {
   transform: scale(1.02);
   transition: 0.5s ease-in-out;
-  cursor: pointer;
 }
 
 .serviceCard h3 {
@@ -294,7 +299,7 @@ nav .navLinks ul li:hover {
 }
 
 .serviceCard img {
-  height: 25%;
+  height: 28%;
   width: 31%;
   object-fit: cover;
   object-position: center;
@@ -318,10 +323,10 @@ nav .navLinks ul li:hover {
   height: 130vh;
   width: 100%;
   color: white;
-  margin: 5rem auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(140deg, #2320209e, #000000);
 }
 
 .workTitle>h2 {
@@ -473,4 +478,62 @@ nav .navLinks ul li:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* FaQ section */
+
+.faq {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(140deg, #232020, #000000);
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  /* enough space for text */
+}
+
+.faq-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
 }
