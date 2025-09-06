@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Css files/style.css" />
   <link rel="stylesheet" href="Css files/utility.css" />
   <link rel="shortcut icon" href="assets/Images/favicon.ico" type="image/x-icon" />
@@ -37,10 +40,10 @@
     <!-- intro section -->
     <main>
 
-      <section class="intro">
+      <section id="intro">
         <div class="intro-content">
           <div class="profile-pic">
-            <img src="assets/Images/Ammar.jpg" alt="Ammar Profile" />
+            <img src="assets/Images/Ammar1.png" alt="Ammar Profile" />
           </div>
           <div class="intro-text">
             <h1>Hi, I'm <span>Fazal e Ammar</span></h1>
@@ -66,7 +69,7 @@
           </p>
         </div>
 
-        <div class="serviceCards">
+        <div id="serviceCards">
 
           <!-- Service 1 -->
           <div class="serviceCard">
@@ -115,7 +118,7 @@
             you’ll find the projects that showcase my skills, problem-solving, and passion for web development.</p>
         </div>
 
-        <div class="workCards">
+        <div id="workCards">
           <div class="workCard">
             <div class="workHeader">
               <img src="/assets/Images/work1.svg" alt="">
@@ -190,7 +193,7 @@
 
       <!-- faq section -->
 
-      <section class="faq">
+      <section id="faq">
         <div class="faq-container">
           <!-- Item 1 -->
           <div class="faq-item active">
@@ -323,8 +326,60 @@
         </div>
       </section>
 
-
     </main>
+
+    <!-- footer section -->
+
+    <footer>
+      <div class="socialMedia">
+        <a href="/"><img src="assets/Images/logo.png" alt=""></a>
+        <div class="socialIcons">
+          <p>Follow me on Social Media</p>
+          <a href="https://www.instagram.com/devbyfazal" target="_blank"><span><i
+                class="fa-brands fa-instagram"></i></span></a>
+          <a href="https://www.linkedin.com/in/fazal-e-ammar" target="_blank"><span><i
+                class="fa-brands fa-linkedin"></i></span></a>
+          <a href="https://x.com/Fazal_e_Ammar" target="_blank"><span><i
+                class="fa-brands fa-x-twitter"></i></i></span></a>
+          <a href="https://github.com/FazaleAmmar" target="_blank"><span><i class="fa-brands fa-github"></i></span></a>
+          <a href="https://www.fiverr.com/s/2Klx7Lq" target="_blank"><span><img src="assets/Images/fiverr.svg"
+                alt=""></span></a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footerLinks">
+        <div class="footerHome links">
+          <h4>Home</h4>
+          <a href="#intro">Intro</a>
+          <a href="#serviceCards">Service</a>
+          <a href="#workCards">Projects</a>
+          <a href="#faq">Faq</a>
+        </div>
+        <div class="footerServices">
+          <h4>Services</h4>
+        </div>
+        <div class="footerProjects">
+          <h4>Projects</h4>
+        </div>
+        <div class="footerAboutUs">
+          <h4>About Us</h4>
+        </div>
+        <div class="footerCareer">
+          <h4>Career</h4>
+        </div>
+        <div class="footerBlog">
+          <h4>Blog</h4>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="rights" style="color: grey;">&copy; 2025 Ammar.dev. All Rights Reserved</div>
+        <div class="version">Version 1.0</div>
+      </div>
+    </footer>
+
+
   </div>
 
   <script src="Js files/index.js"></script>

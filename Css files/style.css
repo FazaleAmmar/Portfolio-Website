@@ -36,7 +36,7 @@ html {
 /* body */
 
 main {
-  background: linear-gradient(140deg, #232020, #000000);
+  background-color: #111010;
 }
 
 .container {
@@ -52,7 +52,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  background: linear-gradient(90deg, #000000, #333131b0);
+  background-color: #111010;
 }
 
 /* Logo */
@@ -114,7 +114,7 @@ nav .navLinks ul li:hover {
 
 /* Intro */
 
-.intro {
+#intro {
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -132,17 +132,23 @@ nav .navLinks ul li:hover {
 
 .profile-pic {
   margin-top: 5rem;
-}
-
-.profile-pic img {
   width: 20rem;
+  box-shadow: 0px 0px 13px 2px white;
   border-radius: 50%;
   border: 3px solid #444;
   margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-pic img {
+  width: 100%;
   object-fit: cover;
+  object-position: bottom;
   transform: translateX(-200%);
   opacity: 0;
-  box-shadow: 0px 0px 13px 2px white;
   transition: all 1s ease;
 }
 
@@ -252,7 +258,7 @@ nav .navLinks ul li:hover {
 
 /* Cards */
 
-.serviceCards {
+#serviceCards {
   height: 68%;
   width: 90%;
   display: flex;
@@ -351,7 +357,7 @@ nav .navLinks ul li:hover {
   text-align: center;
 }
 
-.workCards {
+#workCards {
   height: 70%;
   width: 100%;
   display: flex;
@@ -477,7 +483,7 @@ nav .navLinks ul li:hover {
 
 /* FaQ section */
 
-.faq {
+#faq {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -526,6 +532,13 @@ nav .navLinks ul li:hover {
   font-size: 20px;
   margin-left: 10px;
   transition: transform 0.3s;
+  border-radius: 50%;
+  background-color: #333333a0;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .faq-item.active .faq-icon {
@@ -603,4 +616,119 @@ nav .navLinks ul li:hover {
   width: 50%;
   object-fit: cover;
   object-position: center;
+}
+
+/* footer section */
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: #111010;
+  padding: 0 7%;
+  position: relative;
+}
+
+footer hr {
+  border: 1px solid #80808014;
+  margin: 1rem 0 2rem 0;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialMedia>a>img {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.5);
+}
+
+.socialMedia p {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.socialIcons a {
+  text-decoration: none;
+}
+
+.socialIcons i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.socialIcons img {
+  filter: invert(1);
+  transform: scale(0.8);
+}
+
+.socialIcons span {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #232020, #000000);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.socialIcons span:hover {
+  background: linear-gradient(180deg, #000000, #232020);
+}
+
+/* footer Links */
+
+.footerLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: grey;
+  font-size: 12px;
+}
+
+.footerHome {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.links a:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* copyright section */
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  width: 90vw;
 }

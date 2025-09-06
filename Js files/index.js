@@ -77,3 +77,22 @@ faqItems.forEach((item) => {
     }
   });
 });
+
+// Intro Image with animation
+
+const introImage = document.querySelector(".profile-pic img");
+const images = ["assets/Images/Ammar1.png", "assets/Images/Ammar2.png"];
+let currentIndex = 0;
+
+const changeImage = () => {
+  introImage.style.opacity = "0";
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    introImage.src = images[currentIndex];
+
+    introImage.style.opacity = "1";
+  }, 1000);
+};
+
+setInterval(changeImage, 5000);
