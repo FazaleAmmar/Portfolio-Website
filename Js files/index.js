@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Intro Animation
 
 const introText = document.querySelector(".intro-text");
-const profilePic = document.querySelector(".profile-pic img");
+const profilePic = document.querySelector(".profile-pic ");
 
 const introAnimation = () => {
   setTimeout(() => {

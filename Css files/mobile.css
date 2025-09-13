@@ -1,0 +1,14 @@
+.socialMedia {
+    display: block;
+    gap: 0;
+}
+
+.socialIcons p {
+    font-size: .5rem;
+}
+
+/* navbar */
+
+.navLinks {
+    display: none;
+}
