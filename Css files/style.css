@@ -429,7 +429,7 @@ nav .navLinks ul li:hover {
   background-image: url(../assets/Images/CardBg.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 10rem;
   width: 80%;
   position: relative;
   display: flex;
