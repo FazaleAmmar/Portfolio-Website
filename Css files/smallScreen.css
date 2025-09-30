@@ -1,0 +1,209 @@
+/* navbar */
+
+.logo {
+    width: 40%;
+}
+
+.navLinks ul {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    background-color: #111010;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    display: flex;
+}
+
+.navLinks ul li {
+    width: 90%;
+    font-size: 13px;
+}
+
+.hamburger {
+    top: 3rem;
+    right: 1.5rem;
+    height: 30px;
+    width: 30px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* Our services */
+
+.servicesContainer {
+    height: 100vh;
+}
+
+.serviceTitle {
+    width: 90%;
+}
+
+.serviceTitle>h2 {
+    font-size: 20px;
+}
+
+.serviceTitle p {
+    font-size: 11px;
+    width: 100%;
+}
+
+/* Services Card */
+
+#serviceCards {
+    height: 85%;
+}
+
+.serviceCard {
+    width: 100%;
+    padding: 1.2rem;
+    height: 50%;
+}
+
+.serviceCard h3 {
+    font-size: 18px;
+}
+
+.serviceCard p {
+    font-size: 11px;
+    width: 95%;
+}
+
+.serviceCard img {
+    height: 22%;
+    width: 26%;
+}
+
+/* Work Section  */
+
+.workContainer {
+    margin-top: 5.6rem;
+}
+
+.workTitle {
+    width: 90%;
+    color: gray;
+}
+
+#workCards {
+    height: 100vh;
+}
+
+.workCard {
+    width: 95%;
+    padding: 1rem;
+}
+
+.workCard h3 {
+    font-size: 18px;
+}
+
+.workCard p {
+    font-size: 11px;
+    width: 120%;
+}
+
+.workCard img {
+    height: 30%;
+    width: 35%;
+}
+
+.workBtn {
+    font-size: 10px;
+    padding: 3px 6px;
+}
+
+.workDetails {
+    font-size: 11px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+/* faq Section  */
+
+#faq {
+    height: auto;
+    margin-top: 5.6rem;
+}
+
+.faq-container {
+    gap: 10px;
+}
+
+.faq-question {
+    font-size: 14px;
+}
+
+.faq-answer {
+    font-size: 12px;
+}
+
+.faq-icon {
+    height: 26px;
+    width: 26px;
+    font-size: 18px;
+}
+
+/* Ready Section  */
+
+.readyContent h3 {
+    font-size: 18px;
+}
+
+.readyContent p {
+    width: 100%;
+    font-size: 11px;
+}
+
+.readyContainer img {
+    height: 35%;
+    width: 70%;
+}
+
+.readyBtn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.5rem;
+}
+
+/* footer Section  */
+
+footer {
+    padding: 1.5rem 4%;
+}
+
+.socialImg img {
+    height: 4.5rem;
+    width: 9rem;
+    transform: scale(1.1);
+}
+
+.socialMedia p {
+    font-size: 0.9rem;
+}
+
+.socialIcons span {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.socialIcons i {
+    font-size: 1.1rem;
+}
+
+/* footer Links, copyright section */
+
+.links a {
+    font-size: 11px;
+}
+
+.copyright {
+    font-size: 10px;
+    flex-direction: column;
+    gap: 0.3rem;
+}

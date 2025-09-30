@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Css files/style.css" />
   <link rel="stylesheet" href="Css files/utility.css" />
-  <link rel="stylesheet" href="Css files/mobile.css" media="screen and (max-width: 1200px)" />
+  <link rel="stylesheet" href="Css files//tablet.css" media="screen and (max-width: 1024px)" />
+  <link rel="stylesheet" href="Css files/mobile.css" media="screen and (max-width: 768px)" />
+  <link rel="stylesheet" href="Css files//smallScreen.css" media="screen and (max-width: 480px)">
   <link rel="shortcut icon" href="assets/Images/favicon.ico" type="image/x-icon" />
   <title>"Ammar.dev" Blending creativity with clean, efficient code.</title>
 </head>
@@ -34,17 +34,20 @@
           <li><a href="/">Blog</a></li>
         </ul>
       </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
 
     <!-- main section -->
 
-    <!-- intro section -->
     <main>
+      <!-- intro section -->
 
       <section id="intro">
         <div class="intro-content">
           <div class="profile-pic">
-            <img src="assets/Images/Ammar1.png" alt="Ammar Profile" />
+            <img src="assets/Images/Ammar2.png" alt="Ammar Profile" />
           </div>
           <div class="intro-text">
             <h1>Hi, I'm <span>Fazal e Ammar</span></h1>
@@ -124,7 +127,7 @@
             <div class="workHeader">
               <img src="/assets/Images/work1.svg" alt="">
               <button class="workBtn">
-                <a href="assets/Websites/Calculator/index.html" target="_blank">
+                <a href="https://fazaleammar.github.io/Calculator/" target="_blank">
                   <span>View Project Details</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#fff"
                     fill="#fff">
@@ -157,7 +160,7 @@
             <div class="workHeader">
               <img src="/assets/Images/work2.svg" alt="">
               <button class="workBtn">
-                <a href="assets/Websites/Currency Converter/index.html" target="_blank">
+                <a href="https://fazaleammar.github.io/Currency%20Converter/" target="_blank">
                   <span>View Project Details</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#fff"
                     fill="#fff">
@@ -338,7 +341,8 @@
         </div>
         <div class="socialIcons">
           <p>Follow me on Social Media</p>
-          <a href="https://www.instagram.com/devbyfazal" target="_blank"><span><i
+          <div class="socialLinks">
+            <a href="https://www.instagram.com/official_fazal.e.ammar/" target="_blank"><span><i
                 class="fa-brands fa-instagram"></i></span></a>
           <a href="https://www.linkedin.com/in/fazal-e-ammar" target="_blank"><span><i
                 class="fa-brands fa-linkedin"></i></span></a>
@@ -347,6 +351,7 @@
           <a href="https://github.com/FazaleAmmar" target="_blank"><span><i class="fa-brands fa-github"></i></span></a>
           <a href="https://www.fiverr.com/s/2Klx7Lq" target="_blank"><span><img src="assets/Images/fiverr.svg"
                 alt=""></span></a>
+          </div>
         </div>
       </div>
 
@@ -378,7 +383,7 @@
       </div>
       <div class="copyright">
         <div class="rights" style="color: grey;">&copy; 2025 Ammar.dev. All Rights Reserved</div>
-        <div class="version">Version 1.0</div>
+        <div class="version grey">Version 1.0</div>
       </div>
     </footer>
 

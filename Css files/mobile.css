@@ -1,14 +1,239 @@
-.socialMedia {
-    display: block;
-    gap: 0;
-}
-
-.socialIcons p {
-    font-size: .5rem;
-}
-
 /* navbar */
 
-.navLinks {
-    display: none;
+nav {
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+.navLinks ul li {
+    width: 80%;
+}
+
+/* Hero Section */
+
+#intro {
+    height: auto;
+    padding: 3rem 1.5rem;
+}
+
+.intro-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 14rem;
+    margin-top: 1.5rem;
+}
+
+.intro-content h1 {
+    font-size: 1.8rem;
+}
+
+.intro-content h2 {
+    font-size: 1rem;
+}
+
+.intro-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.profile-pic {
+    width: 11rem;
+    margin-top: 1rem;
+}
+
+.intro-content h1 {
+    font-size: 1.5rem;
+}
+
+.intro-content h2 {
+    font-size: 0.9rem;
+}
+
+.intro-content p {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+}
+
+/* Our Services */
+
+.serviceTitle {
+    width: 80%;
+    margin: 5% 0;
+}
+
+.serviceTitle>h2 {
+    font-size: 24px;
+}
+
+.serviceTitle p {
+    font-size: 12px;
+    width: 90%;
+}
+
+/* Service Card  */
+
+#serviceCards {
+    justify-content: center;
+}
+
+.serviceCard {
+    width: 70%;
+}
+
+.serviceCard h3 {
+    font-size: 20px;
+}
+
+.serviceCard p {
+    font-size: 12px;
+    width: 85%;
+}
+
+.serviceCard img {
+    height: 24%;
+    width: 28%;
+}
+
+/* Work Section */
+
+.workContainer {
+    height: auto;
+}
+
+.workTitle {
+    width: 75%;
+}
+
+.workCard {
+    width: 70%;
+}
+
+.workCard h3 {
+    font-size: 20px;
+}
+
+.workCard p {
+    font-size: 12px;
+}
+
+.workCard img {
+    height: 35%;
+    width: 30%;
+}
+
+/* faq section */
+
+.faq-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.faq-question {
+    font-size: 15px;
+}
+
+.faq-answer {
+    font-size: 13px;
+}
+
+/* ready section */
+
+.ready {
+    height: auto;
+}
+
+.readyContainer {
+    height: auto;
+    padding: 2rem 1rem;
+}
+
+.readyContent h3 {
+    font-size: 20px;
+}
+
+.readyContent p {
+    width: 90%;
+    font-size: 12px;
+}
+
+.readyContainer img {
+    height: 40%;
+    width: 60%;
+}
+
+.readyBtn {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.8rem;
+}
+
+/* footer section */
+
+.socialMedia {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socialImg img {
+    height: 5rem;
+    width: 10rem;
+    transform: scale(1.2);
+}
+
+.socialMedia p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.socialIcons {
+    gap: 0.7rem;
+}
+
+.socialIcons span {
+    height: 2.8rem;
+    width: 2.8rem;
+}
+
+.socialIcons i {
+    font-size: 1.3rem;
+}
+
+/* footer Links, copyright, hamburger section */
+
+.footerLinks {
+    gap: 0.8rem;
+}
+
+.copyright {
+    position: relative;
+    bottom: auto;
+    margin-top: 1rem;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
