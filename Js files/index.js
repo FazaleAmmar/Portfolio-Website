@@ -111,9 +111,7 @@ function hamburger() {
   const navLinksUL = document.querySelector(".navLinks ul");
 
   hamburger.addEventListener("click", () => {
-    console.log("clicked");
-
-    // Will add some functionality later
+    navLinksUL.classList.toggle("show");
   });
 }
 

@@ -4,6 +4,25 @@
     width: 25%;
 }
 
+.navLinks ul {
+    flex-direction: column;
+    position: fixed;
+    top: 11%;
+    backdrop-filter: blur(50px);
+    width: 30%;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+.navLinks ul.show {
+    right: 7%;
+    opacity: 1;
+    display: flex;
+}
+
 .hamburger {
     display: flex;
     align-items: center;
@@ -43,7 +62,7 @@
 
 /* Services Card */
 
-.serviceCard {
+/* .serviceCard {
     width: 48%;
 }
 
@@ -54,6 +73,29 @@
 .serviceCard p {
     font-size: 12px;
     width: 80%;
+} */
+
+#serviceCards {
+    height: 85%;
+}
+
+.serviceCard {
+    width: 70%;
+    padding: 1.2rem;
+    height: 40rem;
+}
+
+.serviceCard h3 {
+    font-size: 18px;
+}
+
+.serviceCard p {
+    font-size: 11px;
+    width: 95%;
+}
+
+.serviceCard img {
+    width: 26%;
 }
 
 /* Word Section  */

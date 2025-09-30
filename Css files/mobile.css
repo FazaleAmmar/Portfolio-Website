@@ -97,7 +97,8 @@ nav {
 }
 
 .serviceCard {
-    width: 70%;
+    width: 90%;
+    height: 31rem;
 }
 
 .serviceCard h3 {
@@ -230,10 +231,4 @@ nav {
     margin-top: 1rem;
     justify-content: center;
     font-size: 11px;
-}
-
-.hamburger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
