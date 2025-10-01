@@ -19,10 +19,6 @@
 
 /* Our services */
 
-.servicesContainer {
-    height: 100vh;
-}
-
 .serviceTitle {
     width: 90%;
 }
@@ -45,7 +41,6 @@
 .serviceCard {
     width: 100%;
     padding: 1.2rem;
-    height: 50%;
 }
 
 .serviceCard h3 {
@@ -59,7 +54,7 @@
 
 .serviceCard img {
     height: 22%;
-    width: 26%;
+    width: 34%;
 }
 
 /* Work Section  */
@@ -70,7 +65,6 @@
 
 .workTitle {
     width: 90%;
-    color: gray;
 }
 
 #workCards {

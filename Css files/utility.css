@@ -1,3 +1,7 @@
 .grey {
-  color: grey;
+  color: gray;
+}
+
+.flex {
+  display: flex;
 }

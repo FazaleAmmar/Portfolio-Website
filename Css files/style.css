@@ -53,7 +53,6 @@ main {
 nav {
   height: 15%;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
@@ -85,7 +84,6 @@ nav {
 }
 
 .navLinks ul {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 15px;
@@ -134,7 +132,6 @@ nav .navLinks ul li:hover {
 
 #intro {
   height: 70vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -143,7 +140,6 @@ nav .navLinks ul li:hover {
 
 .intro-content {
   min-width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -156,7 +152,6 @@ nav .navLinks ul li:hover {
   border: 3px solid #444;
   margin-bottom: 1.5rem;
   overflow: hidden;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   transform: translateX(-200%);
@@ -247,7 +242,6 @@ nav .navLinks ul li:hover {
   width: 100%;
   margin-top: 5.6rem;
   color: white;
-  display: flex;
   align-items: center;
   flex-direction: column;
   padding: 0 1rem;
@@ -265,7 +259,6 @@ nav .navLinks ul li:hover {
   width: 50%;
   max-width: 600px;
   height: auto;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -278,7 +271,6 @@ nav .navLinks ul li:hover {
   max-width: 400px;
   text-align: center;
   line-height: 1.4;
-  color: gray;
 }
 
 /* Cards */
@@ -286,11 +278,11 @@ nav .navLinks ul li:hover {
 #serviceCards {
   height: auto;
   width: 90%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1rem;
   box-sizing: border-box;
+  display: flex;
 }
 
 .serviceCard {
@@ -470,7 +462,8 @@ nav .navLinks ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  justify-content: space-between;
+  height: 12rem;
   width: 80%;
   border-radius: 35px;
 }
@@ -529,6 +522,7 @@ nav .navLinks ul li:hover {
   flex-direction: column;
   padding: 1rem;
   box-sizing: border-box;
+  margin-top: 5.6rem;
 }
 
 .faq-container {
@@ -594,6 +588,7 @@ nav .navLinks ul li:hover {
   flex-direction: column;
   padding: 1rem;
   box-sizing: border-box;
+  margin-top: 5.6rem;
 }
 
 .readyContainer {
@@ -630,7 +625,6 @@ nav .navLinks ul li:hover {
 
 .readyContent p {
   font-size: 12px;
-  color: gray;
   text-align: center;
   width: 65%;
   line-height: 1.4;
