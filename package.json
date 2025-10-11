@@ -1,0 +1,46 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A fully responsive personal portfolio website showcasing my skills, projects, and contact details. Built using HTML, CSS, and JavaScript to deliver a clean, modern, and user-friendly experience.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "npx @tailwindcss/cli -i ./public/styles/input.css -o ./public/styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FazaleAmmar/Portfolio-Website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web developer",
+    "frontend developer",
+    "javascript",
+    "html",
+    "css",
+    "tailwindcss",
+    "responsive design",
+    "personal website",
+    "developer portfolio",
+    "modern web design",
+    "UI development",
+    "Ammar.dev",
+    "creative portfolio",
+    "web projects",
+    "interactive website"
+  ],
+  "author": "Fazal e Ammar",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FazaleAmmar/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/FazaleAmmar/Portfolio-Website#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.14"
+  }
+}

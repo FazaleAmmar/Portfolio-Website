@@ -88,7 +88,7 @@ function faq() {
 
 function introImageAnimation() {
   const introImage = document.querySelector(".profile-pic img");
-  const images = ["assets/Images/Ammar1.png", "assets/Images/Ammar2.png"];
+  const images = ["../images/Ammar1.png", "../images/Ammar2.png"];
   let currentIndex = 0;
 
   const changeImage = () => {
